@@ -52,7 +52,7 @@ class AboutPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "The History of\nEverything",
+                "Dawns World",
                 style: TextStyle(
                     fontFamily: "RobotoMedium",
                     fontSize: 34.0,
@@ -81,8 +81,19 @@ class AboutPage extends StatelessWidget {
                             height: 1.5),
                         children: [
                       TextSpan(
-                        text: "The History of Everything is built with ",
+                        text: "The ",
                       ),
+                      TextSpan(
+                          text: "Dawns World",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap =
+                                () => _launchUrl("https://dawns.world")),
+                      TextSpan(
+                        text: " is built with ",
+                      ),    
                       TextSpan(
                           text: "Flutter",
                           style: TextStyle(
@@ -92,7 +103,7 @@ class AboutPage extends StatelessWidget {
                             ..onTap =
                                 () => _launchUrl("https://www.flutter.io")),
                       TextSpan(
-                        text: " by ",
+                        text: " and ",
                       ),
                       TextSpan(
                           text: "2Dimensions",
@@ -102,32 +113,6 @@ class AboutPage extends StatelessWidget {
                           recognizer: TapGestureRecognizer()
                             ..onTap = () =>
                                 _launchUrl("https://www.2dimensions.com")),
-                      TextSpan(
-                        text:
-                            ". The graphics and animations were created using tools by ",
-                      ),
-                      TextSpan(
-                          text: "2Dimensions",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              decoration: TextDecoration.underline),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () =>
-                                _launchUrl("https://www.2dimensions.com")),
-                      TextSpan(
-                        text: ".\n\nInspired by the Kurzgesagt video ",
-                      ),
-                      TextSpan(
-                          text: "The History & Future of Everything",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              decoration: TextDecoration.underline),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () => _launchUrl(
-                                "https://www.youtube.com/watch?v=5TbUxGZtwGI")),
-                      TextSpan(
-                        text: ".",
-                      )
                     ]))
               ])),
               Text(
@@ -139,11 +124,12 @@ class AboutPage extends StatelessWidget {
                     color: Colors.black.withOpacity(0.5)),
               ),
               GestureDetector(
-                onTap: () => _launchUrl("https://www.2dimensions.com"),
+                onTap: () => _launchUrl("https://dawns.world"),
                 child: Padding(
                     padding: EdgeInsets.only(top: 10.0, bottom: 30.0),
                     child: Image.asset(
-                      "assets/twoDimensions_logo.png",
+                      // "assets/twoDimensions_logo.png",
+                      "assets/dawnsworld_logo_on_transparent_405x63.png",
                       height: 16.0,
                     )),
               ),
@@ -175,7 +161,16 @@ class AboutPage extends StatelessWidget {
                             ),
                           )
                         ])),
-              )
+              ),
+              GestureDetector(
+                onTap: () => _launchUrl("https://www.2dimensions.com"),
+                child: Padding(
+                    padding: EdgeInsets.only(top: 10.0, bottom: 30.0),
+                    child: Image.asset(
+                      "assets/twoDimensions_logo.png",
+                      height: 16.0,
+                    )),
+              ),
             ],
           ),
         ));

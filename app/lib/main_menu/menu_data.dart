@@ -10,6 +10,7 @@ class MenuSectionData {
   String label;
   Color textColor;
   Color backgroundColor;
+  double height;
   String assetId;
   List<MenuItemData> items = List<MenuItemData>();
 }
@@ -106,6 +107,10 @@ class MenuData {
           menuSection.textColor = Color(
               int.parse((map["color"] as String).substring(1, 7), radix: 16) +
                   0xFF000000);
+        }
+        if (map.containsKey("height")) {
+          dynamic height = map["height"];
+          menuSection.height = height is int ? height.toDouble() : height;
         }
         if (map.containsKey("asset")) {
           menuSection.assetId = map["asset"] as String;

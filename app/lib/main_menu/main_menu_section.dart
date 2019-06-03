@@ -18,12 +18,14 @@ class MenuSection extends StatefulWidget {
   final String title;
   final Color backgroundColor;
   final Color accentColor;
+  double height;
   final List<MenuItemData> menuOptions;
   final String assetId;
   final NavigateTo navigateTo;
   final bool isActive;
 
-  MenuSection(this.title, this.backgroundColor, this.accentColor,
+  MenuSection(this.title, this.backgroundColor,
+      this.accentColor, this.height,
       this.menuOptions, this.navigateTo, this.isActive,
       {this.assetId, Key key})
       : super(key: key);
@@ -110,6 +112,10 @@ class _SectionState extends State<MenuSection>
   /// when that element is tapped.
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    if (widget.height==0){
+      widget.height = size.height-500.0;
+    }
     return GestureDetector(
         onTap: _toggleExpand,
         child: Container(
@@ -129,7 +135,7 @@ class _SectionState extends State<MenuSection>
                             assetId: widget.assetId)),
                     Column(children: <Widget>[
                       Container(
-                          height: 150.0,
+                          height: widget.height, // 150.0,
                           alignment: Alignment.bottomCenter,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,

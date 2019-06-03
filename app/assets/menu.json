@@ -1,40 +1,47 @@
 [
     {
-        "label": "Birth of the Universe",
-        "background": "#083158",
+        "label": "Newest & Hottest",
+        "background": "#ff0000",
         "color": "#ffffff",
-        "asset":"milky",
+        "asset": "milky",
+        "height": 150.0,
         "items":
         [
             {
                 "start": -15000000000,
                 "end": -10000000000,
-                "label": "Big Bang"
+                "label": "Big Bang - The first game on dawns world!"
             },
             {
                 "start": -4625000000,
                 "end": -4560000000,
-                "label": "Birth of the Sun"
+                "label": "ETH is supported now."
             },
             {
                 "start": -4520000000,
                 "end": -4490000000,
-                "label": "Earth is Born"
+                "label": "The hottest game \"War of the Gods!\""
             },
             {
-                "start": -4250000000,
-                "end": -3890000000,
-                "label": "Heavy Bombardment"
+                "start": -6800000,
+                "end": -3000000,
+                "label": ".........more"
             }
         ]
     },
     {
-        "label": "Life on Earth",
+        "label": "Carnival",
         "background": "#fdfdfd",
         "color": "#000000",
         "asset":"fish",
+        "height": 0.0,
         "items":
         [
+            {
+                "start": -4300000000,
+                "end": -3560000000,
+                "label": "Games.........more"
+            },
             {
                 "start": -4300000000,
                 "end": -3560000000,
@@ -43,71 +50,91 @@
             {
                 "start": -638000000,
                 "end": -350000000,
-                "label": "Animals"
+                "label": "Big Bang\n- The first game on dawns world!"
             },
             {
                 "start": -320000000,
                 "end": -25000000,
-                "label": "Dinosaur Age"
+                "label": "War of the Gods\n- The hottest game!"
             },
             {
                 "start": -215550384.05521244,
                 "end": -167149739.29848185,
-                "label": "Mammals"
+                "label": "Jurassic\n- Pet crypto dinosaurs."
             },
             {
                 "start": -6800000,
                 "end": -3000000,
-                "label": "Humans"
-            }
-        ]
-    },
-    {
-        "label": "Common Era",
-        "background": "#001d22",
-        "color": "#ffffff",
-        "asset":"mlk",
-        "items":
-        [
+                "label": "Life\n- Simulated life on chain network!"
+            },
             {
                 "start": 900,
                 "end": 1587,
-                "label": "Crusades"
+                "label": "Tokens.........more"
+            },
+            {
+                "start": 900,
+                "end": 1587,
+                "label": "QOS/USDT\n1:0.002653 on QOSChain"
             },
             {
                 "start": 1620,
                 "end": 1824,
-                "label": "Newton's Theory of Gravity"
+                "label": "ETH/USDT\n1:300 on Ethereum"
             },
             {
                 "start": 1852,
                 "end": 1876,
-                "label": "Marie Curie"
+                "label": "PAY/ETH\n300:1 on Ethereum"
             },
             {
                 "start": 1914,
                 "end": 1952,
-                "label": "Amelia Earhart"
+                "label": "PLAY/QOS\n1:0.003 on QOSChain"
             },
             {
                 "start": 1910,
                 "end": 1917,
-                "label": "World War I"
+                "label": "AAA/QOS\n1:0.003 on QOSChain"
+            }
+        ]
+    },
+    {
+        "label": "Account",
+        "background": "#001d22",
+        "color": "#ffffff",
+        "height": 50.0,
+        "items":
+        [
+            {
+                "start": 1910,
+                "end": 1917,
+                "label": "recently played.........more"
             },
             {
-                "start": 1930,
-                "end": 1955,
-                "label": "World War II"
+                "start": 1620,
+                "end": 1824,
+                "label": "Big Bang"
             },
             {
-                "start": 1956,
-                "end": 1972,
-                "label": "Martin Luther King, Jr."
+                "start": 1852,
+                "end": 1876,
+                "label": "War of the Gods"
             },
             {
-                "start": 1955,
-                "end": 2000,
-                "label": "Moon Landing"
+                "start": 1914,
+                "end": 1952,
+                "label": "Jurassic"
+            },
+            {
+                "start": 900,
+                "end": 1587,
+                "label": "Wallet........."
+            },
+            {
+                "start": 1910,
+                "end": 1917,
+                "label": "Settings........."
             }
         ]
     }

@@ -14,7 +14,7 @@ class TimelineApp extends StatelessWidget {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return BlocProvider(
       child: MaterialApp(
-        title: 'History & Future of Everything',
+        title: 'Dawns World',
         theme: ThemeData(
             backgroundColor: background, scaffoldBackgroundColor: background),
         home: MenuPage(),
